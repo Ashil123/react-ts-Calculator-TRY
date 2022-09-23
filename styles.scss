@@ -1,0 +1,79 @@
+h1,
+p {
+  font-family: Lato;
+}
+.calculatorComponent {
+  width: 300px;
+  height: 350px;
+  border: 2px solid gray;
+  padding: 4px;
+  margin: 4px;
+
+  input {
+    width: 90%;
+    padding: 4px;
+    margin: 4px;
+    height: 40px;
+  }
+}
+.resultInput {
+  width: 90%;
+  padding: 4px;
+}
+.operationArea {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 66% auto;
+  justify-content: space-between;
+
+  .buttonNumeric {
+    width: 90%;
+
+    button {
+      width: 55px;
+      color: #fff;
+      background: gray;
+      height: 35px;
+      padding: 2px;
+      border-color: #000;
+      border-radius: 2px;
+      margin: 2px;
+    }
+    :active {
+      background: #fff;
+      color: #000;
+    }
+    button:last-child, .clear {
+      width: 174px;
+    }
+    .clear {
+      color: #fff;
+      background: #da9605;
+    }
+    .clear:active {
+      background: #fff;
+      color: #000;
+    }
+  }
+  .buttonOperators {
+    width: 100%;
+
+    button {
+      width: 90px;
+      color: #fff;
+      background: #da9605;
+      padding: 2px;
+      margin: 2px;
+      height: 28px;
+      border-radius: 2px;
+      border-color: #000;
+    }
+    button:last-child {
+      height: 60px;
+    }
+    :active {
+      background: #fff;
+      color: #000;
+    }
+  }
+}
